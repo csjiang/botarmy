@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
 import logo from './BotArmy-01.svg';
-// import logo from './BobbleTrump.png';
 import './App.css';
 // import TweetEmbed from 'react-tweet-embed';
 
 import {Button, Grid, Row, Col } from 'react-bootstrap';
 
-// import TweetList from './TweetList.jsx';
-
-
 class App extends Component {
   render() {
-
-
     return (
       <div className="App">
         <Grid>
@@ -22,7 +16,7 @@ class App extends Component {
               <div className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
               </div>
-              <h1 className="text-center title">Crush fake news</h1>
+              <h1 className="text-center title">Crush fake new</h1>
               <h2 className="text-center subtitle">with even more fake news</h2>
               <Button bsSize="large" block className="btn btn-primary">Robot-ize your Twitter</Button>
               <h3 className="text-center pre-embed">For the next 48 hours, turn your Twitter into a bot blasting left-fake-news</h3>

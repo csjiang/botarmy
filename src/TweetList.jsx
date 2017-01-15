@@ -21,7 +21,7 @@ class TweetList extends Component {
   constructor(...p) { 
     super(...p);
     this.fetchData(this);
-    setInterval(()=>this.fetchData(this), 5000);
+    setInterval(()=>this.fetchData(this), 60000);
   }
 
   componentWillMount() { 
