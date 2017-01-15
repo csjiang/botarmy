@@ -3,22 +3,8 @@ body, html, #root {
   color: white;
 }
 
-@font-face{ 
-  font-family: 'Metropolis Bold';
-  src: url('./metropolis-fontfacekit/web\ fonts/metropolis_bold_macroman/Metropolis-Bold-webfont.eot');
-  src: url('./metropolis-fontfacekit/web\ fonts/metropolis_bold_macroman/Metropolis-Bold-webfont.eot?iefix') format('eot'),
-       url('./metropolis-fontfacekit/web\ fonts/metropolis_bold_macroman/Metropolis-Bold-webfont.woff') format('woff'),
-       url('./metropolis-fontfacekit/web\ fonts/metropolis_bold_macroman/Metropolis-Bold-webfont.ttf') format('truetype'),
-       url('./metropolis-fontfacekit/web\ fonts/metropolis_bold_macroman/Metropolis-Bold-webfont.svg#webfont') format('svg');
-}
-
-@font-face{ 
-  font-family: 'Metropolis Medium';
-  src: url('./metropolis-fontfacekit/web\ fonts/metropolis_medium_macroman/Metropolis-Medium-webfont.eot');
-  src: url('./metropolis-fontfacekit/web\ fonts/metropolis_medium_macroman/Metropolis-Medium-webfont.eot?iefix') format('eot'),
-       url('./metropolis-fontfacekit/web\ fonts/metropolis_medium_macroman/Metropolis-Medium-webfont.woff') format('woff'),
-       url('./metropolis-fontfacekit/web\ fonts/metropolis_medium_macroman/Metropolis-Medium-webfont.ttf') format('truetype'),
-       url('./metropolis-fontfacekit/web\ fonts/metropolis_medium_macroman/Metropolis-Medium-webfont.svg#webfont') format('svg');
+.row {
+  padding-top: 50px;
 }
 
 .App {
@@ -26,14 +12,14 @@ body, html, #root {
   background-image: url(./background.png);
   background-position: center center !important;
   background-size: cover;
-  overflow: hidden;
+  overflow: auto;
   height: 100%;
 }
 
 .App-logo {
   /*animation: App-logo-spin infinite 20s linear;*/
   padding: 30px;
-  height: 15vh;
+  height: 13vh;
 }
 /*
 .App-header {
@@ -45,16 +31,32 @@ body, html, #root {
   font-size: large;
 }
 
+.title {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: -20px;
+}
+.subtitle {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 50px;
+
+}
+
+.pre-embed {
+  font-size: 15px;
+  padding: 30px;
+}
 
 /*@keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 */
-.body {
+body {
   margin: 0 !important;
   padding: 0 !important;
-  font-family: 'Metropolis Bold';
+  font-family: 'Metropolis';
 }
 
 
@@ -114,6 +116,7 @@ body, html, #root {
   border-width: .2em;
   width: 60%;
   margin: 0 auto;
+  font-weight: bold;
 } 
  
 .btn:hover, 
@@ -155,3 +158,14 @@ fieldset[disabled] .btn.active {
   color: #FFFFFF; 
   background-color: #2729DB; 
 }
+
+.post-embed {
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+h5 {
+  padding-bottom: 200px;
+}
+
+
