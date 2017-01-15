@@ -76,7 +76,11 @@ class TweetList extends Component {
     );
 
 
-    return (<div>{output}</div>);
+    return (<div className='timeline-Viewport'>
+      <ol>
+        {output}
+      </ol>
+        </div>);
   }
 
 }

@@ -11,9 +11,9 @@ class TweetItem extends Component {
   render() {
     const {content} = this.props;
     return ( 
-      <div className='tweetItem'>
+      <li className='tweetItem'>
         <div className='content'>{content}</div>
-      </div>
+      </li>
     )
   }
 

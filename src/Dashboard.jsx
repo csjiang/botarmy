@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import logo from './BotArmy-01.svg';
 import './App.css';
+import './Dashboard.css';
 // import {Button, Grid, Row, Col } from 'react-bootstrap';
 
 // import tweets from '../stub/tweets.json';
@@ -24,9 +25,7 @@ class Dashboard extends Component {
               <h1 className="text-center title">Crush fake new</h1>
               <h2 className="text-center subtitle">with even more fake news</h2>
               <Button bsSize="large" block className="btn btn-primary">Robot-ize your Twitter</Button>
-              <h3 className="text-center pre-embed">
-                Tweets Waiting To Be Born!!
-              </h3>
+
 
               <div style = {{visibility: 'visible', color: 'black'}}>
                 <TweetList/>
