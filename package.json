@@ -1,7 +1,6 @@
 {
   "name": "init",
   "version": "0.1.0",
-  "private": true,
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-preset-es2015": "^6.9.0",
