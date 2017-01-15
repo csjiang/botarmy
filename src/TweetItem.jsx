@@ -7,12 +7,16 @@ import {Button, Grid, Row, Col } from 'react-bootstrap';
 
 class TweetItem extends Component { 
 
-  render() { 
+  render() {
+    const {content} = this.props;
+
     return ( 
+
+
       <div class ='tweetItem'>
         <div class = 'id'></div>
-        <div class = 'content'>{tweetContent}</div>
-      <div>
+        <div class = 'content'>{content}</div>
+      </div>
     )
   }
 

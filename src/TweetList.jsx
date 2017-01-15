@@ -7,6 +7,8 @@ import {Button, Grid, Row, Col } from 'react-bootstrap';
 
 import tweets from '../stub/tweets.json';
 
+import TweetItem from './TweetItem.jsx';
+
 class TweetList extends Component {
 
   componentDidUpdate(){
@@ -15,12 +17,16 @@ class TweetList extends Component {
   }
 
   fetchData() {
+    console.log(JSON.stringify(tweets).slice(0, 200));
     this.state.tweets += tweets;
+
   }
 
   render() { 
     const {tweetItems} = this.props;
-    const output = tweetItems.forEach( (item)=><TweetItem/>);
+    const output = tweetItems.forEach( 
+      (item)=><TweetItem content={item.content}/>
+    );
     return output;
   }
 

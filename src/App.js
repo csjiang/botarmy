@@ -6,7 +6,7 @@ import './App.css';
 
 import {Button, Grid, Row, Col } from 'react-bootstrap';
 
-import TweetList from 'TweetList.jsx';
+// import TweetList from './TweetList.jsx';
 
 
 class App extends Component {
