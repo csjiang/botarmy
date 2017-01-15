@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './BotArmy-01.svg';
 // import logo from './BobbleTrump.png';
 import './App.css';
-import TweetEmbed from 'react-tweet-embed';
 import {Button, Grid, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router';
 
 const TwitterLoading = () => {
     const widget = document.createElement('script');
@@ -36,12 +36,12 @@ class App extends Component {
               </div>
               <h1 className="text-center title">Crush fake news</h1>
               <h2 className="text-center subtitle">with even more fake news</h2>
-              <Button bsSize="large" block className="btn btn-primary">Robot-ize your Twitter</Button>
-              <h3 className="text-center pre-embed">For the next 48 hours, turn your Twitter into a bot blasting left-fake-news</h3>
+              <Button bsSize="large" block className="btn btn-primary"><Link href="https://earsplitting-origami.gomix.me/login/twitter/return">Robot-ize your Twitter</Link></Button>
+              <h3 className="text-center pre-embed">For the next 24 hours, turn your Twitter into a bot blasting left-fake-news</h3>
                 <a className="twitter-timeline"
                   href="https://twitter.com/TreadCrumbs/lists/botarmy" data-chrome="nofooter  noheader"  data-width="500" data-height="500">
                 </a>
-              <h4 className="text-center post-embed">And hundreds more tweets like this, for the next 48 hours.</h4>
+              <h4 className="text-center post-embed">And hundreds more tweets like this, for the next 24 hours.</h4>
               <h5 className="text-center">Safe. Secure. No shady stuff.</h5>
             </Col>
             <Col xs={1} md={2} lg={2} />
