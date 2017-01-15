@@ -7,6 +7,9 @@ import './index.css';
 import Dashboard from './Dashboard';
 import {Router, Route, IndexRedirect, browserHistory} from 'react-router';
 
+
+console.log(Dashboard);
+
 ReactDOM.render(<Router history={browserHistory}>
       <Route path="/" component={App} />
       <Route path="/dashboard" component={Dashboard} />

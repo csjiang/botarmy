@@ -5,7 +5,7 @@ import logo from './BotArmy-01.svg';
 import './App.css';
 import {Button, Grid, Row, Col } from 'react-bootstrap';
 
-import tweets from '../stub/tweets.json';
+import tweets from './stub/tweets.js';
 
 import TweetItem from './TweetItem.jsx';
 
@@ -18,16 +18,22 @@ class TweetList extends Component {
 
   fetchData() {
     console.log(JSON.stringify(tweets).slice(0, 200));
-    this.state.tweets += tweets;
-
+    this.state.tweets += JSON.stringify(tweets);
   }
 
   render() { 
-    const {tweetItems} = this.props;
-    const output = tweetItems.forEach( 
-      (item)=><TweetItem content={item.content}/>
+    const {tweetItems} = this.state;
+
+    console.log(tweetItems);
+    return( 
+      <div>TWEETLIST HERE</div>
     );
-    return output;
+
+    // const {tweetItems} = this.props;
+    // const output = tweetItems.forEach( 
+    //   (item)=><TweetItem content={item.content}/>
+    // );
+    // return output;
   }
 
 }

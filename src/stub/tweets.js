@@ -1,4 +1,4 @@
-export const tweets = [ 
+const tweets = [ 
   { 
     "id": 100,
     "content": "It's easier to ask for forgiveness than to ask for permission"
@@ -36,3 +36,5 @@ export const tweets = [
     "content": "It's easier to ask for forgiveness than to ask for permission"
   }
 ];
+
+export { tweets as default }

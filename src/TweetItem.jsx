@@ -13,9 +13,9 @@ class TweetItem extends Component {
     return ( 
 
 
-      <div class ='tweetItem'>
-        <div class = 'id'></div>
-        <div class = 'content'>{content}</div>
+      <div class='tweetItem'>
+        <div class='id'></div>
+        <div class='content'>{content}</div>
       </div>
     )
   }
