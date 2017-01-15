@@ -1,0 +1,25 @@
+.vid-info {
+	border-radius: 2em;
+	padding: 30px;
+}
+
+.vid-info .btn { 
+  color: red !important; 
+  border-color: #FFFFFF; 
+  border-width: .2em;
+  width: 60%;
+  margin: 0 auto;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8); 
+} 
+
+.vid-info .btn:hover {
+	background-color: white; 
+
+}
+
+ 
+.vid-info .btn .badge { 
+  color: #FFFFFF; 
+  background-color: red !important; 
+}
