@@ -15,11 +15,10 @@ class Dashboard extends Component {
     console.log('!!!!!!!!!!!!');
     return( 
       <div style = {{visibility: 'visible', color: 'black'}}>
-        <div>GRRRRRRRRR</div>
         <TweetList/>
       </div>
     );
-  }
+  }lnr
 
 }
 
