@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 const { Component } = React;
 import { Link } from 'react-router';
+import './Video.css';
+import {Button } from 'react-bootstrap';
+
 
 const styles = {
   root: {
@@ -25,7 +28,7 @@ export default class Video extends Component {
       <div>
         <div className="video-background">
             <div className="video-foreground">
-              <iframe src="https://www.youtube.com/embed/MTzmmakptKI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=SAvLtVXzXZc" frameBorder="0" allowFullScreen></iframe>
+              <iframe src="https://www.youtube.com/embed/MTzmmakptKI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=MTzmmakptKI" frameBorder="0" allowFullScreen></iframe>
             </div>
           </div>
 
@@ -34,7 +37,7 @@ export default class Video extends Component {
             <h1>if you identify as left of alt-right</h1>
             <h2>join the war to fight disinformation with disinformation</h2>
             <Link to='/join'>
-              <button type='button'><h3>enlist</h3></button>
+              <Button bsSize="large" className="btn btn-primary">enlist</Button>
             </Link>
            
           </div>

@@ -5,8 +5,23 @@ import './App.css';
 import TweetEmbed from 'react-tweet-embed';
 import {Button, Grid, Row, Col } from 'react-bootstrap';
 
+const TwitterLoading = () => {
+    const widget = document.createElement('script');
+    widget.src = "https://platform.twitter.com/widgets.js";
+    widget.charset = 'utf-8';
+    widget.async = true;
+    return widget;
+      // <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  }
 
 class App extends Component {
+
+  componentDidMount() {
+    document
+      .querySelector('.App')
+      .appendChild(TwitterLoading());
+  }
+
   render() {
 
 
