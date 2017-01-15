@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import logo from './BotArmy-01.svg';
 // import logo from './BobbleTrump.png';
 import './App.css';
-import TweetEmbed from 'react-tweet-embed';
+// import TweetEmbed from 'react-tweet-embed';
+
 import {Button, Grid, Row, Col } from 'react-bootstrap';
+
+import TweetList from 'TweetList.jsx';
 
 
 class App extends Component {
