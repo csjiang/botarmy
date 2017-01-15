@@ -77,9 +77,9 @@ class TweetList extends Component {
 
 
     return (<div className='timeline-Viewport'>
-      <ol>
+      <ul style={{textAlign:'center'}}>
         {output}
-      </ol>
+      </ul>
         </div>);
   }
 

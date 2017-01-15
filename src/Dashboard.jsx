@@ -15,9 +15,10 @@ class Dashboard extends Component {
 
   render() { 
     return( 
-      <div className="App Dash">
+      <div className="App">
         <Grid>
-          <Col xs={1} md={2} lg={2} />
+          <Row className="show-grid">
+            <Col xs={1} md={2} lg={2} />
             <Col xs={10} md={8} lg={8}>
               <div className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
@@ -25,18 +26,19 @@ class Dashboard extends Component {
               <h1 className="text-center title">Crush fake new</h1>
               <h2 className="text-center subtitle">with even more fake news</h2>
               <Button bsSize="large" block className="btn btn-primary">Robot-ize your Twitter</Button>
-
-
-              <div style = {{visibility: 'visible', color: 'black'}}>
+              <h3 className="text-center pre-embed">For the next 48 hours, turn your Twitter into a bot blasting left-fake-news</h3>
+                <div style = {{visibility: 'visible', color: 'black'}}>
                 <TweetList/>
               </div>
-                
               <h4 className="text-center post-embed">And hundreds more tweets like this, for the next 48 hours.</h4>
               <h5 className="text-center">Safe. Secure. No shady stuff.</h5>
             </Col>
-          
+            <Col xs={1} md={2} lg={2} />
+          </Row>
         </Grid>
       </div>
+
+     
     );
   }
 

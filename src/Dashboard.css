@@ -23,3 +23,7 @@
   color: #666;
   font-size: 12px;
 }
+
+ ul {
+ list-style-type: none;
+ }
